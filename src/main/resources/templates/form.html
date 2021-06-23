@@ -5,7 +5,7 @@
 <body>
 	<header th:replace="layout/layout :: header"> </header>
 	
-	<div class="container jumbotron mt-5">
+	<div class="container jumbotron mt-5 text-center">
 		<p class="record-title">Manda un mensaje bonito para la patrona</p>
 		<form th:action="@{/mensaje}" th:object="${mensaje}" method="post">
 			<div class="form-group">

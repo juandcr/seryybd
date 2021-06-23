@@ -76,7 +76,23 @@ body{
 	color: gray;
 }
 
+.video{
+	width: 100%;
+	height: 250px;
+}
+
+
 @media (min-width: 768px) {
+
+	.happyBD {
+	  font-size: 72px;	     
+	}
+	
+	.video{
+	width: 100%;
+	height: 500px;
+	}
+	
 	.top-padding-index{
 		padding-top:3em;
 	}
@@ -146,6 +162,8 @@ body{
     background-color: #cc99ff  !important;
 }
 
+
+
 .color-paginator-item{
 	color:#000 !important;
 }
@@ -157,8 +175,7 @@ body{
 
 
 .happyBD {
-  font-size: 72px;
+  font-size: 40px;
   color: #cc99ff;  
-  -webkit-text-stroke: 2px black; /* width and color */
-   
+  -webkit-text-stroke: 2px black; /* width and color */   
 }
