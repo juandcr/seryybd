@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:fragment="head">
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Seryy #PirañaArmy</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"></link>
+<link th:href="@{https://fonts.googleapis.com/css?family=Roboto&display=swap}" rel="stylesheet">
+<link rel="icon" th:href="@{img/logo.png}">
+	
+</head>
+
+<header th:fragment="header" class="mastheader">	
+	<nav class="navbar navbar-expand-lg navbar-light translucid">
+		<div class="container">			
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<ul class="navbar-nav mr-auto">
+			</ul>
+				<div class="navbar-nav">
+					<a th:classappend="${#httpServletRequest.getRequestURI() == '/' ? 'active':''}" class="nav-item nav-link" th:href="@{/}">Inicio</a>
+					<a th:classappend="${#httpServletRequest.getRequestURI() == '/mensaje' ? 'active':''}" class="nav-item nav-link" th:href="@{/mensaje}">Dejar Mensaje</a>
+					<a th:classappend="${#httpServletRequest.getRequestURI() == '/listar' ? 'active':''}" class="nav-item nav-link" th:href="@{/listar}">Ver mensajes</a>					
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="alert alert-success" th:if="${success != null}"	th:text="${success}"></div>
+	<div class="alert alert-danger" th:if="${error != null}" th:text="${error}"></div>
+	<div class="alert alert-warning" th:if="${warning != null}"	th:text="${warning}"></div>
+	<div class="alert alert-info" th:if="${info != null}" th:text="${info}"></div>	
+	
+	<div class="innerBanner">
+		<h1 th:text="${textBanner}" class="text-center header-text-1 "></h1>
+		<h2 th:text="${subTextBanner}" class="text-center mt-3 header-text-2 mb-2"></h2>
+	</div>
+	
+</header>
+
+
+
+
+<footer th:fragment="footer" >	
+	<script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/3334cd02bf.js"></script>
+</footer>
+
+</html>

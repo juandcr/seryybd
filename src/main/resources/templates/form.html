@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout:: head"></head>
+<meta charset="UTF-8"/>
+<body>
+	<header th:replace="layout/layout :: header"> </header>
+	
+	<div class="container jumbotron mt-5">
+		<p class="record-title">Manda un mensaje bonito para la patrona</p>
+		<form th:action="@{/mensaje}" th:object="${mensaje}" method="post">
+			<div class="form-group">
+				<input type="text" class="form-control" th:field="*{fromPerson}" placeholder="Ingresa un nombre para que Seryy te identifique" required>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control" th:field="*{coment}" placeholder="Felicita a Seryy usando este recuadro" required></textarea>
+			</div>						
+			<div class="form-group">
+				<input type="submit" class="btn btn-success btn-block " th:value="Enviar"/>
+			</div>			
+		</form>
+	</div>
+	<footer th:replace="layout/layout :: footer"></footer>
+</body>
+</html>

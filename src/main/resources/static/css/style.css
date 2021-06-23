@@ -1,0 +1,164 @@
+body{
+	width: 100%;
+    background-image: url("../img/ballons.png");
+    background-repeat: no-repeat;
+    background-color: #00bfff !important;
+}
+
+.translucid{
+    background-color: rgba(255,255,255,0.65);    
+}
+.felicidades{
+	color: #cc99ff;
+	font-size: 5em;
+	
+	
+}
+
+.navbar .logo{
+    width: 128px;
+    height: 128px;
+}
+
+.mastheader{    
+    width: 100%;
+    background-image: url("../img/banner2.jpg");
+    background-repeat: no-repeat;
+}
+
+.roboto{
+	font-family: 'Roboto', sans-serif;
+}
+.header-text-1{
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	font-weight: bold;
+	font-size: 34px;		
+}
+.header-text-2{
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	font-weight: lighter;
+	font-size: 20px;		
+}
+
+.innerBanner{
+	padding: 3%;
+}
+
+.social-media{
+	font-size: 2em;
+	color:red;	
+}
+
+.footer{
+	border-top: 2px solid red;
+}
+
+.top-padding-index{
+	padding-top:2em;
+}
+
+.top-padding-admin{
+	padding-top:5%; 
+}
+
+.txt-index{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+
+.record-title{
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	color: gray;
+}
+
+@media (min-width: 768px) {
+	.top-padding-index{
+		padding-top:3em;
+	}
+	
+	.header-text-1{
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	font-weight: bold;
+	font-size: 44px;		
+	}
+	
+	.header-text-2{
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	font-weight: lighter;
+	font-size: 24px;		
+	}
+}
+
+@media (min-width: 992px) {
+	.top-padding-index{
+		padding-top:8em;
+	}
+	
+	.header-text-1{
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	font-weight: bold;
+	font-size: 60px;		
+	}
+	
+	.header-text-2{
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	font-weight: lighter;
+	font-size: 28px;		
+	}
+	
+}
+
+@media (min-width: 1200px) {
+	.top-padding-index{
+		padding-top:12em;
+	}
+	
+	.header-text-1{
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	font-weight: bold;
+	font-size: 80px;		
+	}
+	
+	.header-text-2{
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	font-weight: lighter;
+	font-size: 36px;		
+	}	 
+}
+
+.custom-paginator-li{
+	background-color:#23272b !important;
+	border-color: #1d2124 !important;	
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #cc99ff  !important;
+}
+
+.color-paginator-item{
+	color:#000 !important;
+}
+
+.avatar {
+  border-radius: 50%;  
+  
+}
+
+
+.happyBD {
+  font-size: 72px;
+  color: #cc99ff;  
+  -webkit-text-stroke: 2px black; /* width and color */
+   
+}
